@@ -1,0 +1,66 @@
+/*Al ameen-Idowu-salami 8862767*/
+body{
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    font: 20px;
+    padding: 20px;
+}
+header{
+    border: solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px, 0;
+}
+h1{
+    color: blueviolet;
+    font-variant: small-caps;
+}
+h2{
+    color: blueviolet;
+    font-variant: small-caps;
+}
+main{
+    float: left;
+    width: 65vw;
+}
+aside{
+    float: right;
+    width: 25vw;
+}
+.structure{
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    clear: both;
+    border: solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px, 0;
+}
+.images{
+    border: 5px solid blueviolet;
+}
+figcaption {
+    font-weight: bold;          
+    font-variant: small-caps;   
+}
+q {
+    font-family: cursive;     
+    font-style: italic;         
+    font-size: 1.2em;          
+}
+ul li {
+    list-style: none;    
+    line-height: 1.5;   
+}
+ul > li > a {
+    text-decoration: none; 
+    color: #000000;        
+}
+aside a:hover {
+    color: rgb(158, 89, 227);  
+}
+
+
