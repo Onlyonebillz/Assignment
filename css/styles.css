@@ -1,66 +1,183 @@
 /*Al ameen-Idowu-salami 8862767*/
+html{
+    font: normal normal normal 16px arial,sans-serif;
+}
 body{
-    max-width: 1200px;
+    font: normal normal normal 16px arial,sans-serif;
     width: 100vw;
-    margin: 0 auto;
-    font: 20px;
-    padding: 20px;
-}
-header{
-    border: solid #333;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px, 0;
-}
-h1{
-    color: blueviolet;
-    font-variant: small-caps;
-}
-h2{
-    color: blueviolet;
-    font-variant: small-caps;
-}
-main{
-    float: left;
-    width: 65vw;
-}
-aside{
-    float: right;
-    width: 25vw;
-}
-.structure{
-    padding: 10px;
-    margin: 10px;
-}
-footer{
-    clear: both;
-    border: solid #333;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px, 0;
-}
-.images{
-    border: 5px solid blueviolet;
-}
-figcaption {
-    font-weight: bold;          
-    font-variant: small-caps;   
-}
-q {
-    font-family: cursive;     
-    font-style: italic;         
-    font-size: 1.2em;          
-}
-ul li {
-    list-style: none;    
-    line-height: 1.5;   
-}
-ul > li > a {
-    text-decoration: none; 
-    color: #000000;        
-}
-aside a:hover {
-    color: rgb(158, 89, 227);  
+    background-color: hsla(272, 74%, 77%, 0.7);
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
+h1{
+    color: rgb(233, 209, 255);
+    font-size: rem;
+    font-family: "Times New Roman", serif;
+}
+h2{
+    color: rgb(233, 209, 255);
+    font-size: 3rem;
+    font-family: "Times New Roman", serif;
+}
+
+header{
+    background-image: linear-gradient(rgb(142, 7, 239),rgb(234, 62, 228));
+    
+}
+nav{
+    margin: 1rem;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: rgb(117, 38, 174);
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 20px 20px;
+    color:rgb(233, 209, 255) ;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+nav ul li ul.dropdown li {
+    display: block;
+}
+nav ul li ul.dropdown{
+    width: 100%;
+    background-color: rgb(73, 4, 137);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+nav ul li a:hover{
+    background-color: rgb(141, 91, 177);
+    color: cornsilk;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+main{
+    flex: 2 1 70%;
+    background-color: rgb(117, 38, 174);
+    font-size: 1.5rem;
+}
+#wrap{
+    width: 30%;
+    height: 20%;
+    float: left;
+    shape-outside: circle(110%);
+}
+
+aside{
+    background: url('../images/Background.jpg') center center;
+}
+aside ul{
+    list-style-type: square;
+    color: white;
+}
+aside li a{
+    line-height: 3rem;
+    color: rgb(233, 209, 255);
+}
+aside a {
+    color:  rgb(161, 1, 1);
+    font-size: 2.5rem;
+}
+aside a:hover{
+    color: rgb(119, 2, 228);
+}
+.structural{
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+footer{
+    background-image: linear-gradient(rgb(234, 62, 228), rgb(142, 7, 239));
+}
+form{
+    border: 5px dashed rgb(233, 209, 255);
+    border-width: 5px;
+}
+input[type=text], input[type=email], input[type=submit], select, option{
+    display: block;
+    height: 2em;
+    width: 50%; 
+}
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 50%;
+}
+select, legend, option, label, input[type=submit]{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1em;
+    width: 50%;
+}
+input[type=submit]{
+   background-color: rgb(233, 209, 255);
+}
+input[type=submit]:hover{
+    color: white;
+    background-color: blueviolet;
+}
+fieldset{
+    border: none;
+}
+textarea{
+    width: 50%;
+    display: block;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    overflow: hidden;
+}
+.item{
+    box-shadow: 0 4px 8px rgba(214, 15, 151, 0.949);
+    border-radius: 5px;
+    border: 3px solid #0c0c0c;
+    text-align: center;
+}
+figure{
+    border: 2px solid black;
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+footer p{
+    font-size: 1em;
+}
+@media (max-width: 1200) {
+    html{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
 

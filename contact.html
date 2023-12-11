@@ -1,0 +1,96 @@
+<!-- Al ameen-Idowu-salami 8862767 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="normalize" type="text/css" href="css/normalize.css">
+    <title>Wizkid Biography</title>
+    <style>
+        ul{
+            list-style: square;
+        }
+        li,a{
+            line-height: 2rem;
+            color: rgba(44, 41, 41, 0.8);
+        }
+        .name{
+            color: rgb(233, 209, 255);
+        }
+        .email{
+            color: rgb(233, 209, 255);
+            font-size: 1.5rem;
+        }
+        .what{
+            font-size: 1.5rem;
+            color: rgb(233, 209, 255);
+        }
+        .feedback{
+            font-size: 1.5rem;
+            color: rgb(233, 209, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="structural">
+        <h1>Wizkid</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <ul class="dropdown">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav> 
+    <main class="structural">
+      <h2>Contact</h2>
+      <form>
+        <div>
+            <label for="name" class="name">Name</label>
+            <input type="text" id="name" name="name" class="name" autofocus>
+        </div>
+        <div>
+            <label for="email" class="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label class="what">What do you need help with?</label>
+            <select id="help" name="help" required>
+                <option value="0" selected>Select Option</option>
+                <option value="Booking">Booking</option>
+                <option value="Enquiries">Enquiries</option>
+                <option value="Both">Both</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment" class="feedback">Feedback</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <div>
+                
+            <input type="submit" id="submit">
+        </div>
+      </form>
+    </main>    
+    <aside class="structural">
+        <h2>Additional Information</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=DPIOEheFoHs">Link 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jipQpjUA_o8"> Link 2</a></li>
+        </ul>
+    </aside>
+
+</body>
+<footer class="structural">
+    <p>&copy; Al-ameen Idowu-salami. 2023</p>
+</footer>
+
+</html>
